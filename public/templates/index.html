@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
+  <title>Scraper IMDb</title> <!-- Title of the webpage -->
+  <link rel="stylesheet" href="../css/style.css"> <!-- Link to external CSS file -->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"> <!-- Link to favicon -->
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Scraper IMDb</h1> <!-- Heading -->
+  <p>Select a filter to scrap <br> <br> If it's too long stop the server and rerun (sometimes IMDb is too lazy...) <br> <br> (For example "Drama" can take 1 minute)</p> <!-- Explanation -->
+  <form id="scrapeForm"> <!-- Form for selecting filter -->
+    <label for="filterSelect">Select a filter</label>
+    <select id="filterSelect" name="filter"> <!-- Dropdown menu for filter selection -->
+      <option value="drama">Drama</option>
+      <option value="adventure">Adventure</option>
+      <option value="thriller">Thriller</option>
+      <option value="action">Action</option>
+      <option value="crime">Crime</option>
+      <option value="comedy">Comedy</option>
+      <option value="mystery">Mystery</option>
+      <option value="war">War</option>
+      <option value="sci-fi">Sci-Fi</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="romance">Romance</option>
+      <option value="biography">Biography</option>
+      <option value="family">Family</option>
+      <option value="animation">Animation</option>
+      <option value="history">History</option>
+      <option value="sport">Sport</option>
+      <option value="western">Western</option>
+      <option value="horror">Horror</option>
+      <option value="music">Music</option>
+      <option value="musical">Musical</option>
+      <option value="film-noir">Dark Movies</option>
+    </select>
+    <button type="submit">Scrap</button> <!-- Submit button -->
+  </form>
+
+  <div id="loadingScreen"> <!-- Loading screen -->
+    <div>Scraping...</div> <!-- Message indicating scraping process -->
+    <div class="loader"></div> <!-- Loader animation -->
+  </div>
+</div>
+
+<script src="../js/script.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+
+</html>

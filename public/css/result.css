@@ -1,0 +1,47 @@
+body, html {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set font family for all text */
+    background-color: #f0f0f0; /* Set background color for the entire page */
+}
+
+.container {
+    padding: 20px; /* Add padding to the container */
+}
+
+.cards-grid {
+    display: grid; /* Use grid layout for card grid */
+    grid-template-columns: repeat(3, 1fr); /* Arrange grid columns to have three columns with equal width */
+    gap: 50px; /* Add gap between grid items */
+    max-width: 1500px; /* Set maximum width for the grid */
+    margin: 0 auto; /* Center the grid horizontally by setting left and right margins to auto */
+}
+
+.card-container {
+    background-color: #E5B633FF; /* Background color of each card container */
+    border-radius: 5px; /* Adding rounded corners to the card container */
+    overflow: hidden; /* Ensuring any overflowing content is hidden */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adding a subtle box shadow for depth */
+}
+
+.card-image {
+    text-align: center; /* Centering the content within the card image */
+}
+
+.card-image img {
+    height: 420px; /* Setting the height of the card image */
+    width: 100%; /* Ensuring the image fills the entire width of its container */
+    object-fit: contain; /* Ensuring the image maintains its aspect ratio while fitting within the container */
+    margin-bottom: 5px; /* Adding some space below the image */
+    margin-top: 5%; /* Adding some space above the image */
+}
+
+.card-content {
+    text-align: center; /* Centering the content within the card */
+    padding: 15px; /* Adding padding around the content */
+}
+
+#result {
+    text-align: center; /* Ensuring proper center alignment of the result heading */
+    padding-bottom: 10px; /* Adding some space below the result heading */
+}
